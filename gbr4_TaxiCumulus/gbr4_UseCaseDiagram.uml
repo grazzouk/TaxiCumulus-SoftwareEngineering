@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7hSV0LMOEeeBIM8R1Fry8A" name="gbr4_UseCaseDiagram" visibility="public" URI="">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_EnEOkLMPEeeBIM8R1Fry8A" name="PremiumCustomer">
+    <generalization xmi:type="uml:Generalization" xmi:id="_I9yH0MSBEeewXsZQfark0g" general="_4Tt_oLiKEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_NDFYoLMPEeeBIM8R1Fry8A" name="Google"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_OgiOELMPEeeBIM8R1Fry8A" name="Facebook"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_S1W5QLMPEeeBIM8R1Fry8A" name="TaxiCumulus">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Y8AHYLMPEeeBIM8R1Fry8A" name="Authenticate">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DMVhEMSWEee8N94jRQ9E2w" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_D9FokMSWEee8N94jRQ9E2w" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hRB4oLMPEeeBIM8R1Fry8A" name="AuthenticateGoogle">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zjEsoLMPEeeBIM8R1Fry8A" general="_Y8AHYLMPEeeBIM8R1Fry8A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_iagCILMPEeeBIM8R1Fry8A" name="AuthenticateFacebook">
+      <generalization xmi:type="uml:Generalization" xmi:id="_0I7ywLMPEeeBIM8R1Fry8A" general="_Y8AHYLMPEeeBIM8R1Fry8A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_k_ijwLiLEeeQL5EYbouQsA" name="Browse">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Eiy5sLiNEeeQL5EYbouQsA" general="_1bdHILiMEeeQL5EYbouQsA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_67lkULiLEeeQL5EYbouQsA" name="BrowseServices"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6cIoMLiLEeeQL5EYbouQsA" name="CopyOf_BrowseServices_1"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7t9ccLiLEeeQL5EYbouQsA" name="BrowseTariffs">
+      <generalization xmi:type="uml:Generalization" xmi:id="_H4BZoMSBEeewXsZQfark0g" general="_k_ijwLiLEeeQL5EYbouQsA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_D9FBgMSWEee8N94jRQ9E2w" extendedCase="_Y8AHYLMPEeeBIM8R1Fry8A" extensionLocation="_D9FokMSWEee8N94jRQ9E2w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gxLQcLiMEeeQL5EYbouQsA" name="BrowseServices">
+      <generalization xmi:type="uml:Generalization" xmi:id="_HVla8MSBEeewXsZQfark0g" general="_k_ijwLiLEeeQL5EYbouQsA"/>
+      <extend xmi:type="uml:Extend" xmi:id="_DMU6AMSWEee8N94jRQ9E2w" extendedCase="_Y8AHYLMPEeeBIM8R1Fry8A" extensionLocation="_DMVhEMSWEee8N94jRQ9E2w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1bdHILiMEeeQL5EYbouQsA" name="BrowseDiary">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_jEWmEcSXEee8N94jRQ9E2w" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_wAi6QcSYEee8N94jRQ9E2w" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_l3NEMLiOEeeQL5EYbouQsA" name="MakeBooking">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_YBleMMSBEeewXsZQfark0g" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_KqaccL8VEee5IZIZKmt77w" addition="_4neFQLiOEeeQL5EYbouQsA"/>
+      <include xmi:type="uml:Include" xmi:id="_ChNYEMSkEee8N94jRQ9E2w" addition="_1bdHILiMEeeQL5EYbouQsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ngwb8LiOEeeQL5EYbouQsA" name="AmendBooking">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_TOIUgL8WEee5IZIZKmt77w" name="ExtensionPoint1"/>
+      <include xmi:type="uml:Include" xmi:id="_J3OE8L8VEee5IZIZKmt77w" addition="_4neFQLiOEeeQL5EYbouQsA"/>
+      <include xmi:type="uml:Include" xmi:id="_-LfLcMSXEee8N94jRQ9E2w" addition="_1bdHILiMEeeQL5EYbouQsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_tdoqELiOEeeQL5EYbouQsA" name="CancelBooking">
+      <include xmi:type="uml:Include" xmi:id="_xJKCwMSFEeejmo89Hs97QA" addition="_4neFQLiOEeeQL5EYbouQsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4neFQLiOEeeQL5EYbouQsA" name="Pay">
+      <include xmi:type="uml:Include" xmi:id="_ZexboMSGEeejmo89Hs97QA" addition="_TSZY8MSGEeejmo89Hs97QA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_58_GsLiOEeeQL5EYbouQsA" name="PayByBankTransfer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_OD38cLiPEeeQL5EYbouQsA" general="_4neFQLiOEeeQL5EYbouQsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7TzIoLiOEeeQL5EYbouQsA" name="PayByCreditCard">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ezdfMLiPEeeQL5EYbouQsA" general="_4neFQLiOEeeQL5EYbouQsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9Ly6ILiQEeeQL5EYbouQsA" name="ShareRide">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_c76qMcSBEeewXsZQfark0g" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_d3Xl0cSBEeewXsZQfark0g" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="__EN0ULiQEeeQL5EYbouQsA" name="DiscountPrice">
+      <extend xmi:type="uml:Extend" xmi:id="_TOHtcL8WEee5IZIZKmt77w" extendedCase="_l3NEMLiOEeeQL5EYbouQsA" extensionLocation="_TOIUgL8WEee5IZIZKmt77w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_TSZY8MSGEeejmo89Hs97QA" name="SendConfirmation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qhU_ULMPEeeBIM8R1Fry8A" memberEnd="_qhU_U7MPEeeBIM8R1Fry8A _qhU_VLMPEeeBIM8R1Fry8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qhU_UbMPEeeBIM8R1Fry8A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qhU_UrMPEeeBIM8R1Fry8A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qhU_U7MPEeeBIM8R1Fry8A" name="facebook" type="_OgiOELMPEeeBIM8R1Fry8A" association="_qhU_ULMPEeeBIM8R1Fry8A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qhU_VLMPEeeBIM8R1Fry8A" name="authenticatefacebook" type="_iagCILMPEeeBIM8R1Fry8A" association="_qhU_ULMPEeeBIM8R1Fry8A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rWd3kLMPEeeBIM8R1Fry8A" memberEnd="_rWd3k7MPEeeBIM8R1Fry8A _rWd3lLMPEeeBIM8R1Fry8A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rWd3kbMPEeeBIM8R1Fry8A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rWd3krMPEeeBIM8R1Fry8A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rWd3k7MPEeeBIM8R1Fry8A" name="google" type="_NDFYoLMPEeeBIM8R1Fry8A" association="_rWd3kLMPEeeBIM8R1Fry8A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rWd3lLMPEeeBIM8R1Fry8A" name="authenticategoogle" type="_hRB4oLMPEeeBIM8R1Fry8A" association="_rWd3kLMPEeeBIM8R1Fry8A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_4Tt_oLiKEeeQL5EYbouQsA" name="Customer"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t9JX8LiLEeeQL5EYbouQsA" memberEnd="_t9Sh4LiLEeeQL5EYbouQsA _t9Sh4biLEeeQL5EYbouQsA" navigableOwnedEnd="_t9Sh4biLEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t9JX8biLEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t9JX8riLEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t9Sh4LiLEeeQL5EYbouQsA" name="customer" type="_4Tt_oLiKEeeQL5EYbouQsA" association="_t9JX8LiLEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_t9Sh4biLEeeQL5EYbouQsA" name="usecase1" type="_gxLQcLiMEeeQL5EYbouQsA" association="_t9JX8LiLEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6ewo8LiMEeeQL5EYbouQsA" memberEnd="_6ewo87iMEeeQL5EYbouQsA _6ewo9LiMEeeQL5EYbouQsA" navigableOwnedEnd="_6ewo9LiMEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6ewo8biMEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6ewo8riMEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6ewo87iMEeeQL5EYbouQsA" name="customer" type="_4Tt_oLiKEeeQL5EYbouQsA" association="_6ewo8LiMEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6ewo9LiMEeeQL5EYbouQsA" name="browsetariffs" type="_7t9ccLiLEeeQL5EYbouQsA" association="_6ewo8LiMEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F2puQLiNEeeQL5EYbouQsA" memberEnd="_F2puQ7iNEeeQL5EYbouQsA _F2puRLiNEeeQL5EYbouQsA" navigableOwnedEnd="_F2puQ7iNEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F2puQbiNEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F2puQriNEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F2puQ7iNEeeQL5EYbouQsA" name="browsediary" type="_1bdHILiMEeeQL5EYbouQsA" association="_F2puQLiNEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F2puRLiNEeeQL5EYbouQsA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_F2puQLiNEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9-J2ELiOEeeQL5EYbouQsA" memberEnd="_9-J2E7iOEeeQL5EYbouQsA _9-J2FLiOEeeQL5EYbouQsA" navigableOwnedEnd="_9-J2E7iOEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9-J2EbiOEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9-J2EriOEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9-J2E7iOEeeQL5EYbouQsA" name="pay" type="_4neFQLiOEeeQL5EYbouQsA" association="_9-J2ELiOEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9-J2FLiOEeeQL5EYbouQsA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_9-J2ELiOEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AHp5MLiPEeeQL5EYbouQsA" memberEnd="_AHp5M7iPEeeQL5EYbouQsA _AHp5NLiPEeeQL5EYbouQsA" navigableOwnedEnd="_AHp5M7iPEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AHp5MbiPEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AHp5MriPEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AHp5M7iPEeeQL5EYbouQsA" name="makebooking" type="_l3NEMLiOEeeQL5EYbouQsA" association="_AHp5MLiPEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_AHp5NLiPEeeQL5EYbouQsA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_AHp5MLiPEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_K_jP0LiPEeeQL5EYbouQsA" memberEnd="_K_jP07iPEeeQL5EYbouQsA _K_jP1LiPEeeQL5EYbouQsA" navigableOwnedEnd="_K_jP07iPEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K_jP0biPEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K_jP0riPEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K_jP07iPEeeQL5EYbouQsA" name="cancelbooking" type="_tdoqELiOEeeQL5EYbouQsA" association="_K_jP0LiPEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_K_jP1LiPEeeQL5EYbouQsA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_K_jP0LiPEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LokXoLiPEeeQL5EYbouQsA" memberEnd="_LokXo7iPEeeQL5EYbouQsA _LokXpLiPEeeQL5EYbouQsA" navigableOwnedEnd="_LokXo7iPEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LokXobiPEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LokXoriPEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LokXo7iPEeeQL5EYbouQsA" name="amendbooking" type="_ngwb8LiOEeeQL5EYbouQsA" association="_LokXoLiPEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LokXpLiPEeeQL5EYbouQsA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_LokXoLiPEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_s0XOILiPEeeQL5EYbouQsA" name="Bank"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1cT7YLiPEeeQL5EYbouQsA" memberEnd="_1cT7Y7iPEeeQL5EYbouQsA _1cT7ZLiPEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1cT7YbiPEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1cT7YriPEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1cT7Y7iPEeeQL5EYbouQsA" name="paybybanktransfer" type="_58_GsLiOEeeQL5EYbouQsA" association="_1cT7YLiPEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1cT7ZLiPEeeQL5EYbouQsA" name="bank" type="_s0XOILiPEeeQL5EYbouQsA" association="_1cT7YLiPEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_5GpfILiPEeeQL5EYbouQsA" name="CreditCardCompany"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7Qti8LiPEeeQL5EYbouQsA" memberEnd="_7Qti87iPEeeQL5EYbouQsA _7Qti9LiPEeeQL5EYbouQsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7Qti8biPEeeQL5EYbouQsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7Qti8riPEeeQL5EYbouQsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7Qti87iPEeeQL5EYbouQsA" name="paybycreditcard" type="_7TzIoLiOEeeQL5EYbouQsA" association="_7Qti8LiPEeeQL5EYbouQsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7Qti9LiPEeeQL5EYbouQsA" name="creditcardcompany" type="_5GpfILiPEeeQL5EYbouQsA" association="_7Qti8LiPEeeQL5EYbouQsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_37sqYMSBEeewXsZQfark0g" memberEnd="_37yxAMSBEeewXsZQfark0g _37yxAcSBEeewXsZQfark0g" navigableOwnedEnd="_37yxAMSBEeewXsZQfark0g">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_37t4gMSBEeewXsZQfark0g" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_37t4gcSBEeewXsZQfark0g" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_37yxAMSBEeewXsZQfark0g" name="authenticate" type="_Y8AHYLMPEeeBIM8R1Fry8A" association="_37sqYMSBEeewXsZQfark0g"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_37yxAcSBEeewXsZQfark0g" name="customer" type="_4Tt_oLiKEeeQL5EYbouQsA" association="_37sqYMSBEeewXsZQfark0g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cVBQAMSGEeejmo89Hs97QA" memberEnd="_cVKZ8sSGEeejmo89Hs97QA _cVKZ88SGEeejmo89Hs97QA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cVKZ8MSGEeejmo89Hs97QA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cVKZ8cSGEeejmo89Hs97QA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cVKZ8sSGEeejmo89Hs97QA" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_cVBQAMSGEeejmo89Hs97QA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cVKZ88SGEeejmo89Hs97QA" name="returnconfirmation" type="_TSZY8MSGEeejmo89Hs97QA" association="_cVBQAMSGEeejmo89Hs97QA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mFPGsMSjEee8N94jRQ9E2w" memberEnd="_mFPtwsSjEee8N94jRQ9E2w _mFQU0MSjEee8N94jRQ9E2w" navigableOwnedEnd="_mFPtwsSjEee8N94jRQ9E2w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mFPtwMSjEee8N94jRQ9E2w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mFPtwcSjEee8N94jRQ9E2w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mFPtwsSjEee8N94jRQ9E2w" name="shareride" type="_9Ly6ILiQEeeQL5EYbouQsA" association="_mFPGsMSjEee8N94jRQ9E2w"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mFQU0MSjEee8N94jRQ9E2w" name="premiumcustomer" type="_EnEOkLMPEeeBIM8R1Fry8A" association="_mFPGsMSjEee8N94jRQ9E2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_pjigYMkTEeek67v96FSKzw" name="Database"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wUiTEMkTEeek67v96FSKzw" name="Forum"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yq8w0MkTEeek67v96FSKzw" memberEnd="_yrPrwMkTEeek67v96FSKzw _yrPrwckTEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yq8w0ckTEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yq8w0skTEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yrPrwMkTEeek67v96FSKzw" name="shareride" type="_9Ly6ILiQEeeQL5EYbouQsA" association="_yq8w0MkTEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_yrPrwckTEeek67v96FSKzw" name="forum" type="_wUiTEMkTEeek67v96FSKzw" association="_yq8w0MkTEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OjdTUMkVEeek67v96FSKzw" memberEnd="_OjdTU8kVEeek67v96FSKzw _OjdTVMkVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OjdTUckVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OjdTUskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OjdTU8kVEeek67v96FSKzw" name="browse" type="_k_ijwLiLEeeQL5EYbouQsA" association="_OjdTUMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_OjdTVMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_OjdTUMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ps_uQMkVEeek67v96FSKzw" memberEnd="_Ps_uQ8kVEeek67v96FSKzw _Ps_uRMkVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ps_uQckVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ps_uQskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ps_uQ8kVEeek67v96FSKzw" name="browsediary" type="_1bdHILiMEeeQL5EYbouQsA" association="_Ps_uQMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ps_uRMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_Ps_uQMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Rbc0IMkVEeek67v96FSKzw" memberEnd="_Rbc0I8kVEeek67v96FSKzw _Rbc0JMkVEeek67v96FSKzw" navigableOwnedEnd="_Rbc0I8kVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rbc0IckVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rbc0IskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Rbc0I8kVEeek67v96FSKzw" name="discountprice" type="__EN0ULiQEeeQL5EYbouQsA" association="_Rbc0IMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Rbc0JMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_Rbc0IMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UQXLwMkVEeek67v96FSKzw" memberEnd="_UQXLw8kVEeek67v96FSKzw _UQXLxMkVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UQXLwckVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UQXLwskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UQXLw8kVEeek67v96FSKzw" name="makebooking" type="_l3NEMLiOEeeQL5EYbouQsA" association="_UQXLwMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_UQXLxMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_UQXLwMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fW8eoMkVEeek67v96FSKzw" memberEnd="_fW8eo8kVEeek67v96FSKzw _fW8epMkVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fW8eockVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fW8eoskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fW8eo8kVEeek67v96FSKzw" name="amendbooking" type="_ngwb8LiOEeeQL5EYbouQsA" association="_fW8eoMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fW8epMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_fW8eoMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f6ROIMkVEeek67v96FSKzw" memberEnd="_f6ROI8kVEeek67v96FSKzw _f6ROJMkVEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f6ROIckVEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f6ROIskVEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f6ROI8kVEeek67v96FSKzw" name="cancelbooking" type="_tdoqELiOEeeQL5EYbouQsA" association="_f6ROIMkVEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f6ROJMkVEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_f6ROIMkVEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Uu-k8MkWEeek67v96FSKzw" memberEnd="_Uu-k88kWEeek67v96FSKzw _Uu-k9MkWEeek67v96FSKzw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Uu-k8ckWEeek67v96FSKzw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Uu-k8skWEeek67v96FSKzw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Uu-k88kWEeek67v96FSKzw" name="authenticate" type="_Y8AHYLMPEeeBIM8R1Fry8A" association="_Uu-k8MkWEeek67v96FSKzw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Uu-k9MkWEeek67v96FSKzw" name="database" type="_pjigYMkTEeek67v96FSKzw" association="_Uu-k8MkWEeek67v96FSKzw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_nY5cENqeEeeZRtMrrFmbrA" name="Interaction1">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-oNbUNqeEeeZRtMrrFmbrA" name="" type="_EnEOkLMPEeeBIM8R1Fry8A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_LlGvkNqfEeeZRtMrrFmbrA" name="" type="_s0XOILiPEeeQL5EYbouQsA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sQ2QMNqjEeeZRtMrrFmbrA" name="" type="_pjigYMkTEeek67v96FSKzw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_INH4YNqlEeeZRtMrrFmbrA" name="" type="_s0XOILiPEeeQL5EYbouQsA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KEPLANqlEeeZRtMrrFmbrA" name="" type="_5GpfILiPEeeQL5EYbouQsA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_576AENqlEeeZRtMrrFmbrA" name="" type="_UQXLwMkVEeek67v96FSKzw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sdM34NqoEeej8pjqenKE3A" name="" type="_K_jP0LiPEeeQL5EYbouQsA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4xFrYNqoEeej8pjqenKE3A" name="CancelBooking" type="_K_jP0LiPEeeQL5EYbouQsA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_-oM0QNqeEeeZRtMrrFmbrA" name="" represents="_-oNbUNqeEeeZRtMrrFmbrA" coveredBy="_1ZnWENqkEeeZRtMrrFmbrA _OJV_MNqlEeeZRtMrrFmbrA _uEXKUNqlEeeZRtMrrFmbrA _uEWjQNqlEeeZRtMrrFmbrA _zA5VwNqlEeeZRtMrrFmbrA _rTvrkdqfEeeZRtMrrFmbrA _rTvrkNqfEeeZRtMrrFmbrA _rTvEgNqfEeeZRtMrrFmbrA _IBgo0NqmEeeZRtMrrFmbrA _NATeENqmEeeZRtMrrFmbrA _ZCAx4NqlEeeZRtMrrFmbrA _akQgYNqoEeej8pjqenKE3A _hJVW8NqoEeej8pjqenKE3A _5MvQINqpEeej8pjqenKE3A _ADJuUNqqEeej8pjqenKE3A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_sQ1CENqjEeeZRtMrrFmbrA" name="" represents="_sQ2QMNqjEeeZRtMrrFmbrA" coveredBy="_uEXKUNqlEeeZRtMrrFmbrA _uEWjQNqlEeeZRtMrrFmbrA _zA5VwNqlEeeZRtMrrFmbrA _9n6F0NqnEeej8pjqenKE3A _WtOkcdqoEeej8pjqenKE3A _WtOkcNqoEeej8pjqenKE3A _hJUv4NqoEeej8pjqenKE3A _4NWPsNqpEeej8pjqenKE3A _5NdB0dqpEeej8pjqenKE3A _8TVNoNqpEeej8pjqenKE3A _ADJHQNqqEeej8pjqenKE3A"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_INGqQNqlEeeZRtMrrFmbrA" name="" represents="_INH4YNqlEeeZRtMrrFmbrA" coveredBy="_OJWmQNqlEeeZRtMrrFmbrA _uEXKUNqlEeeZRtMrrFmbrA _uEWjQNqlEeeZRtMrrFmbrA _zA5VwNqlEeeZRtMrrFmbrA _LW4eoNqlEeeZRtMrrFmbrA _ZCAx4dqlEeeZRtMrrFmbrA _LW33kNqlEeeZRtMrrFmbrA _31HdQNqmEeeZRtMrrFmbrA _31HdQdqmEeeZRtMrrFmbrA _4EEfQNqmEeeZRtMrrFmbrA _4ED4MNqmEeeZRtMrrFmbrA _4EjAYdqmEeeZRtMrrFmbrA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_KEN84NqlEeeZRtMrrFmbrA" name="" represents="_KEPLANqlEeeZRtMrrFmbrA" coveredBy="_uEXKUNqlEeeZRtMrrFmbrA _uEWjQNqlEeeZRtMrrFmbrA _zA5VwNqlEeeZRtMrrFmbrA _Dw7kcNqmEeeZRtMrrFmbrA _IBhP4NqmEeeZRtMrrFmbrA _NAS3ANqmEeeZRtMrrFmbrA _CytMMNqnEeeZRtMrrFmbrA _CytzQNqnEeeZRtMrrFmbrA _C9wloNqnEeeZRtMrrFmbrA _C9v-kNqnEeeZRtMrrFmbrA _C-LcYdqnEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5Mv3MNqpEeej8pjqenKE3A" name="selectBookingForCancellation_MessageRecv" message="_5MuCANqpEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OJV_MNqlEeeZRtMrrFmbrA" name="pay_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ADJuUNqqEeej8pjqenKE3A" name="selectBookingForCancellation_MessageRecv0" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_ADH5INqqEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_rTvEgNqfEeeZRtMrrFmbrA" name="BehaviorExecSpecStart" covered="_-oM0QNqeEeeZRtMrrFmbrA" execution="_rTvrkNqfEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_rTvrkNqfEeeZRtMrrFmbrA" name="BehaviorExecSpec" covered="_-oM0QNqeEeeZRtMrrFmbrA" finish="_rTvrkdqfEeeZRtMrrFmbrA" start="_rTvEgNqfEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5MvQINqpEeej8pjqenKE3A" name="selectBookingForCancellation_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_5MuCANqpEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5NdB0dqpEeej8pjqenKE3A" name="BehaviorExecSpec0Start" covered="_sQ1CENqjEeeZRtMrrFmbrA" execution="_9n6F0NqnEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hJUv4NqoEeej8pjqenKE3A" name="confirmCancellation_MessageSend0" covered="_sQ1CENqjEeeZRtMrrFmbrA" message="_hJUI0NqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5NSCsNqpEeej8pjqenKE3A" name="BehaviorExecSpec3Finish" execution="_5NRbodqpEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_akxdwNqoEeej8pjqenKE3A" name="BehaviorExecSpec2Finish" execution="_akw2sdqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_9n6F0NqnEeej8pjqenKE3A" name="BehaviorExecSpec0" covered="_sQ1CENqjEeeZRtMrrFmbrA" finish="_ADJHQNqqEeej8pjqenKE3A" start="_5NdB0dqpEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ADJHQNqqEeej8pjqenKE3A" name="selectBookingForCancellation_MessageSend0" covered="_sQ1CENqjEeeZRtMrrFmbrA" message="_ADH5INqqEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_8TVNoNqpEeej8pjqenKE3A" name="BehaviorExecSpec0Finish" covered="_sQ1CENqjEeeZRtMrrFmbrA" execution="_9n6F0NqnEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_4NWPsNqpEeej8pjqenKE3A" name="BehaviorExecSpec0Start" covered="_sQ1CENqjEeeZRtMrrFmbrA" execution="_9n6F0NqnEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_akQgYNqoEeej8pjqenKE3A" name="confirmCancellation_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_akPSQNqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_WtOkcNqoEeej8pjqenKE3A" name="BehaviorExecSpec1" covered="_sQ1CENqjEeeZRtMrrFmbrA" finish="_WtOkcdqoEeej8pjqenKE3A" start="_hJUv4NqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_WtOkcdqoEeej8pjqenKE3A" name="BehaviorExecSpec1Finish" covered="_sQ1CENqjEeeZRtMrrFmbrA" execution="_WtOkcNqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_rTvrkdqfEeeZRtMrrFmbrA" name="BehaviorExecSpecFinish" covered="_-oM0QNqeEeeZRtMrrFmbrA" execution="_rTvrkNqfEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_akw2sdqoEeej8pjqenKE3A" name="BehaviorExecSpec2" finish="_akxdwNqoEeej8pjqenKE3A" start="_akRHcNqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_5NRbodqpEeej8pjqenKE3A" name="BehaviorExecSpec3" finish="_5NSCsNqpEeej8pjqenKE3A" start="_5Mv3MNqpEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_akRHcNqoEeej8pjqenKE3A" name="confirmCancellation_MessageRecv" message="_akPSQNqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_hJVW8NqoEeej8pjqenKE3A" name="confirmCancellation_MessageRecv0" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_hJUI0NqoEeej8pjqenKE3A"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_uEWjQNqlEeeZRtMrrFmbrA" name="CombinedFragment" covered="_KEN84NqlEeeZRtMrrFmbrA _sQ1CENqjEeeZRtMrrFmbrA _INGqQNqlEeeZRtMrrFmbrA _-oM0QNqeEeeZRtMrrFmbrA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_uEXKUNqlEeeZRtMrrFmbrA" name="InteractionOperand" covered="_KEN84NqlEeeZRtMrrFmbrA _sQ1CENqjEeeZRtMrrFmbrA _INGqQNqlEeeZRtMrrFmbrA _-oM0QNqeEeeZRtMrrFmbrA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_31HdQNqmEeeZRtMrrFmbrA" name="refund_MessageSend" covered="_INGqQNqlEeeZRtMrrFmbrA" message="_31FoENqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_4EEfQNqmEeeZRtMrrFmbrA" name="BehaviorExecSpec2Finish" covered="_INGqQNqlEeeZRtMrrFmbrA" execution="_4ED4MNqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZCAx4NqlEeeZRtMrrFmbrA" name="payByBankTransfer_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_ZB_jwNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_4ED4MNqmEeeZRtMrrFmbrA" name="BehaviorExecSpec2" covered="_INGqQNqlEeeZRtMrrFmbrA" finish="_4EEfQNqmEeeZRtMrrFmbrA" start="_31HdQdqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_4EjAYdqmEeeZRtMrrFmbrA" name="BehaviorExecSpec1Start" covered="_INGqQNqlEeeZRtMrrFmbrA" execution="_LW33kNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_LW33kNqlEeeZRtMrrFmbrA" name="BehaviorExecSpec1" covered="_INGqQNqlEeeZRtMrrFmbrA" finish="_LW4eoNqlEeeZRtMrrFmbrA" start="_4EjAYdqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZCAx4dqlEeeZRtMrrFmbrA" name="payByBankTransfer_MessageRecv" covered="_INGqQNqlEeeZRtMrrFmbrA" message="_ZB_jwNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_31HdQdqmEeeZRtMrrFmbrA" name="refund_MessageRecv" covered="_INGqQNqlEeeZRtMrrFmbrA" message="_31FoENqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jaxVcNqlEeeZRtMrrFmbrA" name="sendConfirmation_MessageSend" message="_jawuYNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jax8gNqlEeeZRtMrrFmbrA" name="sendConfirmation_MessageRecv" message="_jawuYNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_LW4eoNqlEeeZRtMrrFmbrA" name="BehaviorExecSpec1Finish" covered="_INGqQNqlEeeZRtMrrFmbrA" execution="_LW33kNqlEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IBgo0NqmEeeZRtMrrFmbrA" name="payByCreditCard_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_IBfasNqmEeeZRtMrrFmbrA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_uEXKUdqlEeeZRtMrrFmbrA">
+          <specification xmi:type="uml:LiteralString" xmi:id="_uEXxYNqlEeeZRtMrrFmbrA" value="undefined"/>
+          <maxint xmi:type="uml:LiteralInteger" xmi:id="_uEXxYtqlEeeZRtMrrFmbrA" value="1"/>
+          <minint xmi:type="uml:LiteralInteger" xmi:id="_uEXxYdqlEeeZRtMrrFmbrA"/>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_zA5VwNqlEeeZRtMrrFmbrA" name="InteractionOperand0" covered="_KEN84NqlEeeZRtMrrFmbrA _sQ1CENqjEeeZRtMrrFmbrA _INGqQNqlEeeZRtMrrFmbrA _-oM0QNqeEeeZRtMrrFmbrA">
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_C-LcYdqnEeeZRtMrrFmbrA" name="BehaviorExecSpecStart" covered="_KEN84NqlEeeZRtMrrFmbrA" execution="_Dw7kcNqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Dw7kcNqmEeeZRtMrrFmbrA" name="BehaviorExecSpec" covered="_KEN84NqlEeeZRtMrrFmbrA" finish="_NAS3ANqmEeeZRtMrrFmbrA" start="_C-LcYdqnEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_IBhP4NqmEeeZRtMrrFmbrA" name="payByCreditCard_MessageRecv" covered="_KEN84NqlEeeZRtMrrFmbrA" message="_IBfasNqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CytMMNqnEeeZRtMrrFmbrA" name="refund_MessageSend" covered="_KEN84NqlEeeZRtMrrFmbrA" message="_CyslINqnEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CytzQNqnEeeZRtMrrFmbrA" name="refund_MessageRecv" covered="_KEN84NqlEeeZRtMrrFmbrA" message="_CyslINqnEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NATeENqmEeeZRtMrrFmbrA" name="sendConfirmation_MessageRecv" covered="_-oM0QNqeEeeZRtMrrFmbrA" message="_NARo4NqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NAS3ANqmEeeZRtMrrFmbrA" name="sendConfirmation_MessageSend" covered="_KEN84NqlEeeZRtMrrFmbrA" message="_NARo4NqmEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_C9wloNqnEeeZRtMrrFmbrA" name="BehaviorExecSpec0Finish" covered="_KEN84NqlEeeZRtMrrFmbrA" execution="_C9v-kNqnEeeZRtMrrFmbrA"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_C9v-kNqnEeeZRtMrrFmbrA" name="BehaviorExecSpec0" covered="_KEN84NqlEeeZRtMrrFmbrA" finish="_C9wloNqnEeeZRtMrrFmbrA" start="_CytzQNqnEeeZRtMrrFmbrA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_zA580NqlEeeZRtMrrFmbrA">
+          <specification xmi:type="uml:LiteralString" xmi:id="_zA580dqlEeeZRtMrrFmbrA" value="else"/>
+          <maxint xmi:type="uml:LiteralInteger" xmi:id="_zA6j4dqlEeeZRtMrrFmbrA" value="1"/>
+          <minint xmi:type="uml:LiteralInteger" xmi:id="_zA6j4NqlEeeZRtMrrFmbrA"/>
+        </guard>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XqFVoNqlEeeZRtMrrFmbrA" name="BehaviorExecSpec2Start"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1ZnWENqkEeeZRtMrrFmbrA" name="pay()_MessageSend" covered="_-oM0QNqeEeeZRtMrrFmbrA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OJWmQNqlEeeZRtMrrFmbrA" name="pay_MessageRecv" covered="_INGqQNqlEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_mpwWwNqhEeeZRtMrrFmbrA" name="Message" messageSort="asynchCall"/>
+    <message xmi:type="uml:Message" xmi:id="_XNjnINqkEeeZRtMrrFmbrA" name="cancelBooking" messageSort="reply"/>
+    <message xmi:type="uml:Message" xmi:id="_4J0z4NqkEeeZRtMrrFmbrA" name="pay" messageSort="asynchCall" signature="_4Je1oNqkEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_ZB_jwNqlEeeZRtMrrFmbrA" name="payByBankTransfer()" receiveEvent="_ZCAx4dqlEeeZRtMrrFmbrA" sendEvent="_ZCAx4NqlEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_jawuYNqlEeeZRtMrrFmbrA" name="sendConfirmation()" messageSort="reply" receiveEvent="_jax8gNqlEeeZRtMrrFmbrA" sendEvent="_jaxVcNqlEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_IBfasNqmEeeZRtMrrFmbrA" name="payByCreditCard()" receiveEvent="_IBhP4NqmEeeZRtMrrFmbrA" sendEvent="_IBgo0NqmEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_NARo4NqmEeeZRtMrrFmbrA" name="sendConfirmation()" messageSort="reply" receiveEvent="_NATeENqmEeeZRtMrrFmbrA" sendEvent="_NAS3ANqmEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_31FoENqmEeeZRtMrrFmbrA" name="refund()" receiveEvent="_31HdQdqmEeeZRtMrrFmbrA" sendEvent="_31HdQNqmEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_CyslINqnEeeZRtMrrFmbrA" name="refund()" receiveEvent="_CytzQNqnEeeZRtMrrFmbrA" sendEvent="_CytMMNqnEeeZRtMrrFmbrA"/>
+    <message xmi:type="uml:Message" xmi:id="_akPSQNqoEeej8pjqenKE3A" name="confirmCancellation()" receiveEvent="_akRHcNqoEeej8pjqenKE3A" sendEvent="_akQgYNqoEeej8pjqenKE3A"/>
+    <message xmi:type="uml:Message" xmi:id="_hJUI0NqoEeej8pjqenKE3A" name="confirmCancellation" messageSort="asynchSignal" receiveEvent="_hJVW8NqoEeej8pjqenKE3A" sendEvent="_hJUv4NqoEeej8pjqenKE3A" signature="_hI-xoNqoEeej8pjqenKE3A"/>
+    <message xmi:type="uml:Message" xmi:id="_5MuCANqpEeej8pjqenKE3A" name="selectBookingForCancellation()" receiveEvent="_5Mv3MNqpEeej8pjqenKE3A" sendEvent="_5MvQINqpEeej8pjqenKE3A"/>
+    <message xmi:type="uml:Message" xmi:id="_ADH5INqqEeej8pjqenKE3A" name="selectBookingForCancellation()" messageSort="reply" receiveEvent="_ADJuUNqqEeej8pjqenKE3A" sendEvent="_ADJHQNqqEeej8pjqenKE3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_4Je1oNqkEeeZRtMrrFmbrA" name="pay"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_hI-xoNqoEeej8pjqenKE3A" name="confirmCancellation"/>
+</uml:Model>
